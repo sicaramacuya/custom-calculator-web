@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quadratic Formula Calculator</title>
+        <link rel="stylesheet" href="./resources/css/styles.css">
+    </head>
+    <body>
+        <section id="global-title-section">
+            <div id="global-title-container">
+                <h1 id="global-title-text">Quadratic Formula Calculator</h1>
+            </div>
+        </section>
+
+        <!-- ----------------------------------------------------------- -->
+
+
+        <section id="calculator-title-section">
+            <div id="calculator-title-container">
+                <h2 id="calculator-title-text">Calculator</h2>
+            </div>
+
+            <!-- ---------------------------- -->
+
+
+            <div id="calculator-content-container">
+                <!-- START: REUSING MARKUP FROM TIP CALCULATOR -->
+                <div id="main-rectangle-workplace">
+                    <div style="width: 100%; display: flex;">
+                        <div id="input-side-rectangle-workplace">
+                                <div id="input-side-rectangle">
+                                    <div id="input-side-bill-text">Value of variable <span style="font-weight: bolder;">a</span></div>
+                                    <div id="input-side-bill">
+                                        <input id="input-bill" class="input" value="0.0" type="number">
+                                    </div>
+                                    <div id="input-side-tip-text">Value of variable <span style="font-weight: bolder;">b</span></div>
+                                    <div id="input-side-tip">
+                                        <input id="input-tip" class="input" value="15" type="number">
+                                    </div>
+                                    <div id="input-side-number-people-text">Value of variable <span style="font-weight: bolder;">c</span></div>
+                                    <div id="input-side-people">
+                                        <input id="input-people" class="input" value="1" type="number">
+                                    </div>
+                                </div>
+                        </div>
+                        <div id="output-side-rectangle-workplace">
+                            <div id="output-side-rectangle">
+                                <div id="output-side-content">
+                                    <div id="output-side-tip-content-rectangle">
+                                        <div id="output-side-tip-person-text-workspace">
+                                            <div id="output-side-tip-person-text">
+                                                    <div id="tip-text">First posible answer</div>
+                                            </div>
+                                        </div>
+                                        <div id="output-side-tip-person-value-workspace">
+                                            <span id="display-tip">x<sub>1</sub></span>
+                                        </div>
+                                    </div>
+                                    <div id="output-side-total-content-rectangle">
+                                        <div id="output-side-total-person-text-workspace">
+                                            <div id="output-side-total-person-text">
+                                                <div id="total-text">Second posible answer</div>
+                                            </div>
+                                        </div>
+                                        <div id="output-side-total-person-value">
+                                            <span id="display-total">x<sub>2</sub></span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: REUSED MARKUP FROM TIP CALCULATOR -->
+            </div>
+        </section>
+
+        <!-- ----------------------------------------------------------- -->
+
+        <section id="calculator-use-section">
+            <div id="calculator-use-title-container">
+                <h2 id="calculator-use-title-text">Calculator Use</h2>
+            </div>
+
+            <!-- ---------------------------- -->
+
+            <div id="calculator-use-content-container">
+                <div id="calculator-use-paragraph-container">
+                    <p id="calculator-use-paragraph-1">
+                        This online calculator is a quadratic equation solver that will solve a second-order polynomial equation such as \(ax^2 + bx + c = 0\) for x, where a &ne; 0, using the quadratic formula.
+                    </p>
+                    <p id="calculator-use-paragraph-2">
+                        When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+                        \[x = {&minus;b \pm \sqrt{b^2&minus;4ac} \over 2a}.\]
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+                src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+    </body>
+</html>
