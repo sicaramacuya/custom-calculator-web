@@ -35,7 +35,7 @@ body {
 }
 
 #output-side-rectangle {
-    padding-top: 70px;
+    padding-top: 50px;
     padding-left: 10px
 }
 
@@ -43,49 +43,44 @@ body {
     padding: 10px 15px;
 }
 
-#output-side-tip-content-rectangle {
+#output-side-answer-1-content-rectangle {
     display: inline-block;
     width: 100%;
     padding-bottom: 20px;
     display: flex;
 }
 
-#output-side-tip-person-text-workspace {
+#output-side-answer-1-text-workspace {
     display: inline-block;
     width: 30%;
 }
 
-#output-side-tip-person-text {
+#output-side-answer-1-text {
     display: block
 }
 
-#tip-text {
+#answer-1-text {
     font-size: 20px;
 }
 
-#output-side-tip-person-value-workspace {
+#output-side-answer-1-value-workspace {
     display: inline-block;
     text-align: right;
     width: 70%;
     font-size: 32px;
 }
 
-#display-tip {
-    text-align: right;
-    font-size: 32px;
-}
-
-#output-side-total-content-rectangle {
+#output-side-answer-2-content-rectangle {
     width: 100%;
     display: flex;
 }
 
-#output-side-total-person-text-workspace {
+#output-side-answer-2-text-workspace {
     display: inline-block;
     width: 30%;
 }
 
-#output-side-total-person-text {
+#output-side-answer-2-text {
     display: block;
 }
 
@@ -93,36 +88,31 @@ body {
     font-size: 20px;
 }
 
-#output-side-total-person-value {
+#output-side-answer-2-value {
     display: inline-block;
     text-align: right;
     width: 70%;
     font-size: 32px;
 }
 
-#display-total {
-    text-align: right;
-
-}
-
-#input-side-bill-text {
+#input-side-variable-a-text {
     padding-bottom: 5px;
     font-size: 20px;
 }
 
-#input-side-tip-text{
+#input-side-variable-b-text{
     padding-top: 16px;
     padding-bottom: 5px;
     font-size: 20px;
 }
 
-#input-side-number-people-text {
+#input-side-number-variable-c-text {
     padding-top: 16px;
     padding-bottom: 5px;
     font-size: 20px;
 }
 
-#input-side-bill {
+#input-side-variable-a {
     width: 100%;
 }
 
@@ -156,9 +146,6 @@ body {
     height: 70px;
     padding: 10px;
 }
-
-/* #global-title-container {
-} */
 
 #global-title-text {
     font-weight: 900;
