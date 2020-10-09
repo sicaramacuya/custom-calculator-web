@@ -19,3 +19,25 @@ function myFunction() {
 
 // ----------------------------------------------------------------
 
+
+const variableA = document.querySelector('#input-bill')
+const variableB = document.querySelector('#input-tip')
+const variableC = document.querySelector('#input-people')
+const displaySolution1 = document.querySelector('#display-tip')
+const displaySolution2 = document.querySelector('#display-total')
+
+variableA.addEventListener('input', handleBill)
+variableB.addEventListener('input', handleBill)
+variableC.addEventListener('input', handleBill)
+
+function handleBill() {
+    const a = parseFloat(variableA.value)
+    const b = parseFloat(variableB.value) 
+    const c = parseInt(variableC.value)
+
+    const firstPosibleAnswer = (-b + (b**2 - 4 * a * c)**(1/2)) / 2*a
+    const secondPosibleAnswer = (-b - (b**2 - 4 * a * c)**(1/2)) / 2*a 
+
+    displaySolution1.innerHTML = firstPosibleAnswer.toFixed(2)
+    displaySolution2.innerHTML = secondPosibleAnswer.toFixed(2)
+}
