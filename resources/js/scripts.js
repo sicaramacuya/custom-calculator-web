@@ -20,17 +20,17 @@ function myFunction() {
 // ----------------------------------------------------------------
 
 
-const variableA = document.querySelector('#input-bill')
-const variableB = document.querySelector('#input-tip')
-const variableC = document.querySelector('#input-people')
-const displaySolution1 = document.querySelector('#display-tip')
-const displaySolution2 = document.querySelector('#display-total')
+const variableA = document.querySelector('#input-variable-a')
+const variableB = document.querySelector('#input-variable-b')
+const variableC = document.querySelector('#input-variable-c')
+const displaySolution1 = document.querySelector('#display-solution-1')
+const displaySolution2 = document.querySelector('#display-solution-2')
 
-variableA.addEventListener('input', handleBill)
-variableB.addEventListener('input', handleBill)
-variableC.addEventListener('input', handleBill)
+variableA.addEventListener('input', quadraticFormula)
+variableB.addEventListener('input', quadraticFormula)
+variableC.addEventListener('input', quadraticFormula)
 
-function handleBill() {
+function quadraticFormula() {
     const a = parseFloat(variableA.value)
     const b = parseFloat(variableB.value) 
     const c = parseInt(variableC.value)
@@ -38,6 +38,6 @@ function handleBill() {
     const firstPosibleAnswer = (-b + (b**2 - 4 * a * c)**(1/2)) / 2*a
     const secondPosibleAnswer = (-b - (b**2 - 4 * a * c)**(1/2)) / 2*a 
 
-    displaySolution1.innerHTML = firstPosibleAnswer.toFixed(2)
-    displaySolution2.innerHTML = secondPosibleAnswer.toFixed(2)
+    displaySolution1.innerHTML = firstPosibleAnswer.toFixed(3)
+    displaySolution2.innerHTML = secondPosibleAnswer.toFixed(3)
 }
